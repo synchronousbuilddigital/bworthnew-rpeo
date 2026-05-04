@@ -20,8 +20,8 @@ const brandLogos = [
   { name: "TRENZIC", src: "/Trenzc.png" }
 ];
 
-// Triple the array to ensure smooth continuous scrolling
-const duplicatedLogos = [...brandLogos, ...brandLogos, ...brandLogos];
+// Double the array for seamless continuous scrolling
+const duplicatedLogos = [...brandLogos, ...brandLogos];
 
 const BrandCarousel = () => {
   const { theme } = useTheme();
@@ -39,12 +39,12 @@ const BrandCarousel = () => {
                   <Image
                     src={brand.src}
                     alt={brand.name}
-                    width={148}
-                    height={84}
+                    width={190}
+                    height={108}
                     className={styles.brandLogoLarge}
                     unoptimized
                     quality={100}
-                    sizes="(max-width: 768px) 126px, 148px"
+                    sizes="(max-width: 768px) 160px, 190px"
                     style={{ objectFit: "contain" }}
                   />
                 </div>

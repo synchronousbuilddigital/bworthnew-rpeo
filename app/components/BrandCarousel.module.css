@@ -48,11 +48,13 @@
 
 /* Animations */
 .scrollContentRight {
-  animation: scrollRight 145s linear infinite;
+  /* Lightning speed marquee for top row */
+  animation: scrollRight 0.4s linear infinite;
 }
 
 .scrollContentLeft {
-  animation: scrollLeft 125s linear infinite;
+  /* Lightning speed marquee for bottom row */
+  animation: scrollLeft 0.5s linear infinite;
 }
 
 @keyframes scrollRight {
@@ -86,8 +88,8 @@
 
 /* Logo image styles */
 .brandLogoLarge {
-  width: 148px;
-  height: 84px;
+  width: 190px;
+  height: 108px;
   object-fit: contain;
   image-rendering: -webkit-optimize-contrast;
   backface-visibility: hidden;
@@ -160,13 +162,21 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+  .scrollContentRight {
+    animation: scrollRight 0.3s linear infinite;
+  }
+
+  .scrollContentLeft {
+    animation: scrollLeft 0.4s linear infinite;
+  }
+
   .logoWrapper {
     padding: 0 0.4rem;
   }
 
   .brandLogoLarge {
-    width: 126px;
-    height: 72px;
+    width: 160px;
+    height: 96px;
   }
   
   .brandLogoSmall {
