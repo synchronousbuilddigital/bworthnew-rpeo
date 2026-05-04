@@ -39,10 +39,13 @@ const BrandCarousel = () => {
                   <Image
                     src={brand.src}
                     alt={brand.name}
-                    width={180}
-                    height={100}
+                    width={148}
+                    height={84}
                     className={styles.brandLogoLarge}
-                    objectFit="contain"
+                    unoptimized
+                    quality={100}
+                    sizes="(max-width: 768px) 126px, 148px"
+                    style={{ objectFit: "contain" }}
                   />
                 </div>
                 <span className={styles.separatorLarge}>◆</span>
@@ -60,10 +63,12 @@ const BrandCarousel = () => {
                   <Image
                     src={brand.src}
                     alt={brand.name}
-                    width={140}
-                    height={80}
+                    width={100}
+                    height={56}
                     className={styles.brandLogoSmall}
-                    objectFit="contain"
+                    quality={100}
+                    sizes="(max-width: 768px) 84px, 100px"
+                    style={{ objectFit: "contain" }}
                   />
                 </div>
                 <span className={styles.separatorSmall}>◆</span>
