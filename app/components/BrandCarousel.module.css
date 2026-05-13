@@ -48,13 +48,13 @@
 
 /* Animations */
 .scrollContentRight {
-  /* Lightning speed marquee for top row */
-  animation: scrollRight 0.4s linear infinite;
+  /* Slower marquee for top row */
+  animation: scrollRight 4.2s linear infinite;
 }
 
 .scrollContentLeft {
-  /* Lightning speed marquee for bottom row */
-  animation: scrollLeft 0.5s linear infinite;
+  /* Slower marquee for bottom row */
+  animation: scrollLeft 4.8s linear infinite;
 }
 
 @keyframes scrollRight {
@@ -163,11 +163,11 @@
 /* Responsive */
 @media (max-width: 768px) {
   .scrollContentRight {
-    animation: scrollRight 0.3s linear infinite;
+    animation: scrollRight 4.8s linear infinite;
   }
 
   .scrollContentLeft {
-    animation: scrollLeft 0.4s linear infinite;
+    animation: scrollLeft 5.6s linear infinite;
   }
 
   .logoWrapper {

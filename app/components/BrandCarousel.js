@@ -11,7 +11,7 @@ const brandLogos = [
   { name: "HomeSolution", src: "/HomeSolution.png" },
   { name: "JRCY", src: "/JRCY.png" },
   { name: "Nandrani", src: "/Nand.png" },
-  { name: "Neel & Ned", src: "/Neel & Ned.png" },
+  { name: "Neel & Ned", src:"/Neel & Ned.png" },
   { name: "The Plain Edition", src: "/Plain.png" },
   { name: "Sasha-The Label", src: "/Sasa.png" },
   { name: "SEEME", src: "/SEEME.png" },
